@@ -4,15 +4,15 @@ import { useState, useEffect } from "react";
 
 const images = [
   {
-    src: "https://www.cinemacenter.com.ar/images/bannervavenom327102024.jpg",
+    src: "portada/venomPortada.webp",
     alt: "First slide",
   },
   {
-    src: "https://www.cinemacenter.com.ar/img_movies/3072_img1.jpg",
+    src: "portada/MyHeroAcademiaPortada.webp",
     alt: "Second slide",
   },
   {
-    src: "https://www.cinemacenter.com.ar/img_movies/2980_img1.jpg",
+    src: "portada/RobotSalvajePortada.webp",
     alt: "Third slide",
   },
 ];
