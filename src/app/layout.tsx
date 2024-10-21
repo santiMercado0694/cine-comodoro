@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
-import Carousel from "@/components/landing/Carousel";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/layouts/Footer";
 
