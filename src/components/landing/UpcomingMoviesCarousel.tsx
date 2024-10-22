@@ -3,7 +3,7 @@
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import movies from '../../context/movies.json';
+import movies from '../../context/UpcomingMovies.json';
 
 const UpcomingCarousel = () => {
   return (

@@ -12,6 +12,14 @@ const Navbar = () => {
     }
   };
 
+  const scrollToProximos = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('proximos-estrenos'); // Asegúrate de que el ID coincida
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="bg-gradient-to-r from-black-900 to-black-800 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">
@@ -33,9 +41,14 @@ const Navbar = () => {
           <Link href="/precios" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
             PRECIOS
           </Link>
-          <Link href="/proximos" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+          <a
+            href="#proximos-estrenos"
+            onClick={scrollToProximos}
+            className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg"
+            style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}
+          >
             PROXIMOS ESTRENOS
-          </Link>
+          </a>
         </div>
       </div>
       <style jsx>{`

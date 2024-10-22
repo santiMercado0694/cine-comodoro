@@ -8,7 +8,7 @@ export default function Home() {
     <>     
       <Carousel /> 
         <Movies />
-        <h1 className="text-center text-3xl font-bold mb-2">PROXIMOS ESTRENOS</h1>
+        <h1 id="proximos-estrenos" className="text-center text-3xl font-bold mb-2">PROXIMOS ESTRENOS</h1>
         <UpcomingMoviesCarousel />
     </>
   );
