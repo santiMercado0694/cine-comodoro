@@ -9,7 +9,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
   const movie = movies.find((m) => m.id === parseInt(params.MovieId));
 
   if (!movie) {
-    notFound(); // Si no encuentra la película, devuelve una página 404
+    notFound(); 
   }
 
   return (

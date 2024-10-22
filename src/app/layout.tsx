@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/layouts/Footer";
+import MaxWidthWrapper from "@/components/layouts/MaxWidthWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,13 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-            className={cn(
-              "relative h-full font-sans antialiased",
-              inter.className
-            )}
-          >
-        <Navbar />
-        {children}
+        className={cn("relative h-full font-sans antialiased", inter.className)}
+      >
+        <MaxWidthWrapper>
+          <Navbar />
+          {children}
+        </MaxWidthWrapper>
         <Footer />
       </body>
     </html>
