@@ -13,31 +13,36 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-gray-900 to-gray-800 shadow-lg">
+    <nav className="bg-gradient-to-r from-black-900 to-black-800 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-white text-2xl font-bold transition-transform transform hover:scale-110" style={{ fontFamily: 'Roboto, sans-serif' }}>
+        <div className="text-white text-2xl font-bold " style={{ fontFamily: 'Roboto, sans-serif' }}>
           <Link href="/">Cine Comodoro</Link>
         </div>
-        <div className="flex-grow flex justify-center space-x-8">
+        <div className="flex-grow flex justify-center space-x-8 ">
           <a
             href="#cartelera"
             onClick={scrollToCartelera}
-            className="text-white text-lg hover:underline hover:text-yellow-400 transition duration-300 ease-in-out cursor-pointer"
-            style={{ fontFamily: 'Roboto, sans-serif' }}
+            className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg"
+            style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}
           >
-            Cartelera
+            CARTELERA
           </a>
-          <Link href="/horarios" className="text-white text-lg hover:underline hover:text-yellow-400 transition duration-300 ease-in-out" style={{ fontFamily: 'Roboto, sans-serif' }}>
-            Horarios
+          <Link href="/horarios" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+            HORARIOS
           </Link>
-          <Link href="/precios" className="text-white text-lg hover:underline hover:text-yellow-400 transition duration-300 ease-in-out" style={{ fontFamily: 'Roboto, sans-serif' }}>
-            Precios
+          <Link href="/precios" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+            PRECIOS
           </Link>
-          <Link href="/proximos" className="text-white text-lg hover:underline hover:text-yellow-400 transition duration-300 ease-in-out" style={{ fontFamily: 'Roboto, sans-serif' }}>
-            Próximos Estrenos
+          <Link href="/proximos" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+            PROXIMOS ESTRENOS
           </Link>
         </div>
       </div>
+      <style jsx>{`
+        a:hover {
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+        }
+      `}</style>
     </nav>
   );
 };
