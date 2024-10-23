@@ -59,7 +59,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
           </p>
           <button
             className={`mt-4 text-white px-4 py-2 rounded-lg transition duration-200 ${
-              selectedHorario ?  "bg-green-600" : "bg-gray-400 cursor-not-allowed"
+              selectedHorario ? "bg-green-600" : "bg-gray-400 cursor-not-allowed"
             }`}
             disabled={!selectedHorario}
             onClick={() => alert(`Has comprado una entrada para el horario: ${selectedHorario}`)}
@@ -68,6 +68,21 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
           </button>
           {!selectedHorario && (
             <p className="text-red-500 mt-2">Por favor, seleccione un horario para comprar tu entrada.</p>
+          )}
+          
+          {/* Sección del tráiler */}
+          {movie.trailer && (
+            <div className="mt-4">
+              <h2 className="text-xl font-bold">Tráiler</h2>
+              <iframe
+                width="100%"
+                height="315"
+                src={`https://www.youtube.com/embed/${movie.trailer}`}
+                title={`Tráiler de ${movie.title}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           )}
         </div>
       </div>
