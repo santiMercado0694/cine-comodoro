@@ -35,7 +35,7 @@ const Navbar = () => {
           >
             CARTELERA
           </a>
-          <Link href="/horarios" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+          <Link href="/Schedule" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
             HORARIOS
           </Link>
           <Link href="/precios" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
