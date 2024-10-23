@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import Link from 'next/link'; // Importa Link para la navegación interna
+import Link from 'next/link'; 
 import movies from '../../context/movies.json'; 
 
 const Movies = () => {

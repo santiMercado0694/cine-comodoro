@@ -2,15 +2,21 @@
 
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import movies from "../../../context/movies.json"; // Asegúrate de que la ruta a tu JSON sea correcta
+import { useState } from "react";
+import movies from "../../../context/movies.json"; 
 import MaxWidthWrapper from "@/components/layouts/MaxWidthWrapper";
 
 const Movie = ({ params }: { params: { MovieId: string } }) => {
   const movie = movies.find((m) => m.id === parseInt(params.MovieId));
+  const [selectedHorario, setSelectedHorario] = useState<string | null>(null);
 
   if (!movie) {
     notFound(); 
   }
+
+  const handleHorarioClick = (hora: string) => {
+    setSelectedHorario(hora);
+  };
 
   return (
     <MaxWidthWrapper>
@@ -33,12 +39,36 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
           <p className="text-md font-semibold">Género: <span className="font-normal">{movie.genero}</span></p>
           <p className="text-md font-semibold">Calificación: <span className="font-normal">{movie.calificacion}</span></p>
           <p className="text-md font-semibold">Duración: <span className="font-normal">{movie.duracion}</span></p>
-          <a 
-            href={movie.link} 
-            className="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-200"
+          <p className="text-md font-semibold">Horarios:{" "}
+            <span className="font-normal">
+              {movie.horarios.map((horario, index) => (
+                <span
+                  key={horario.hora}
+                  className={`cursor-pointer ${
+                    selectedHorario === horario.hora
+                      ? "text-blue-600 font-bold"
+                      : "text-gray-400 hover:text-blue-500"
+                  }`}
+                  onClick={() => handleHorarioClick(horario.hora)}
+                  style={{ transition: "transform 0.2s ease-in-out", fontSize: selectedHorario === horario.hora ? '1.1em' : '1em' }}
+                >
+                  {horario.hora}{index < movie.horarios.length - 1 && ", "}
+                </span>
+              ))}
+            </span>
+          </p>
+          <button
+            className={`mt-4 text-white px-4 py-2 rounded-lg transition duration-200 ${
+              selectedHorario ?  "bg-green-600" : "bg-gray-400 cursor-not-allowed"
+            }`}
+            disabled={!selectedHorario}
+            onClick={() => alert(`Has comprado una entrada para el horario: ${selectedHorario}`)}
           >
-            Ver más detalles
-          </a>
+            Comprar
+          </button>
+          {!selectedHorario && (
+            <p className="text-red-500 mt-2">Por favor, seleccione un horario para comprar tu entrada.</p>
+          )}
         </div>
       </div>
     </MaxWidthWrapper>

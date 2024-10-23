@@ -2,33 +2,61 @@
   {
     "id": 1,
     "title": "Smile 2",
-    "description": "A punto de embarcarse en una nueva gira mundial, la sensación mundial del pop Skye Riley (Naomi Scott) comienza a experimentar sucesos cada vez más aterradores e inexplicables. Abrumada por los crecientes horrores y las presiones de la fama, Skye se ve obligada a enfrentarse a su oscuro pasado para recuperar el control de su vida antes de que sea demasiado tarde",
+    "description": "A punto de embarcarse en una nueva gira mundial, la sensación mundial del pop Skye Riley comienza a experimentar sucesos cada vez más aterradores e inexplicables...",
     "fecha": "Jueves 17 de Octubre de 2024",
-    "protagonistas": "Naomi Scott, Sosie Bacon, Kyle Gallner, Lukas Gage, Rosemarie DeWitt, Dylan Gelula, Raúl Castillo, Peter Jacobson Morris, Miles Gutiérrez-Riley, Caitlin Stasey",
+    "protagonistas": "Naomi Scott, Sosie Bacon, Kyle Gallner...",
     "director": "Parker Finn",
     "genero": "Terror",
     "calificacion": "Apta para mayores de 16 años",
     "duracion": "128 Minutos",
     "image": "/cartelera/SmileTwo.webp",
-    "link": "/Movie/1"
+    "link": "/Movie/1",
+    "horarios": [
+      {
+        "hora": "13:00",
+        "entradas_disponibles": 50
+      },
+      {
+        "hora": "16:00",
+        "entradas_disponibles": 30
+      },
+      {
+        "hora": "20:00",
+        "entradas_disponibles": 25
+      }
+    ]
   },
   {
     "id": 2,
     "title": "La Sustancia",
-    "description": "Concebida como un salvaje ejercicio de terror gore, The Substance construye una enérgica sátira sobre la presión estética a la que se ven sometidas las mujeres por parte de la industria del entretenimiento, y por la sociedad en su conjunto. Con la promesa: «tú, pero mejor en todos los sentidos», La Sustancia, un producto revolucionario basado en la división celular, crea un alter ego más joven, más bello y más perfecto que alterará la vida de una mujer en crisis.",
+    "description": "Concebida como un salvaje ejercicio de terror gore...",
     "fecha": "Jueves 19 de Septiembre de 2024",
-    "protagonistas": "Demi Moore, Margaret Qualley, Dennis Quaid, Gore Abrams, Hugo Diego Garcia, Olivier Raynal, Tiffany Hofstetter, Tom Morton, Jiselle Burkhalter, Axel Baille",
+    "protagonistas": "Demi Moore, Margaret Qualley...",
     "director": "Coralie Fargeat",
     "genero": "Drama/Terror Corporal",
     "calificacion": "Apta para mayores de 16 años",
     "duracion": "140 Minutos",
     "image": "/cartelera/LaSustancia.webp",
-    "link": "/Movie/2"
+    "link": "/Movie/2",
+    "horarios": [
+      {
+        "hora": "14:30",
+        "entradas_disponibles": 40
+      },
+      {
+        "hora": "18:30",
+        "entradas_disponibles": 20
+      },
+      {
+        "hora": "22:30",
+        "entradas_disponibles": 10
+      }
+    ]
   },
   {
     "id": 3,
     "title": "My Hero Academia: Ahora es tu turno",
-    "description": "Japón está devastado por la batalla total cuando un hombre misterioso aparece de repente. Se presenta como el que reemplazará a All Might, convirtiéndose en el nuevo Símbolo. Proclama '¡Ahora es mi turno!'', ¡pero resulta ser Dark Might! A pesar de parecerse a All Might en apariencia, los ideales de Dark Might no podrían ser más diferentes. Desata su Don para sus propios deseos, creando una fortaleza masiva que comienza a absorber a la población una tras otra. Entre el grupo que acompaña a Dark Might se encuentra Anna, una joven con un Don desconocido que está siendo atacada por un individuo estoico con atuendo de mayordomo. Aunque esta persona, Giulio, la llama 'Señorita Anna', parece estar tras su vida. ¿Cuál podría ser su conexión con Dark Might?.",
+    "description": "Japón está devastado por la batalla total...",
     "fecha": "Sábado 23 de Septiembre de 2024",
     "protagonistas": "Personajes Ficticios",
     "director": "Kenji Nagasaki",
@@ -36,25 +64,53 @@
     "calificacion": "Apta para todos los públicos",
     "duracion": "104 Minutos",
     "image": "/cartelera/MyHeroAcademia.webp",
-    "link": "/Movie/3"
+    "link": "/Movie/3",
+    "horarios": [
+      {
+        "hora": "10:00",
+        "entradas_disponibles": 60
+      },
+      {
+        "hora": "12:30",
+        "entradas_disponibles": 50
+      },
+      {
+        "hora": "15:00",
+        "entradas_disponibles": 40
+      }
+    ]
   },
   {
     "id": 4,
     "title": "Robot Salvaje",
-    "description": "La aventura épica sigue el viaje de un robot - ROZZUM unidad 7134, “Roz” para abreviar - que naufraga en una isla deshabitada y debe aprender a adaptarse al duro entorno, estableciendo gradualmente relaciones con los animales de la isla y convirtiéndose en la madre adoptiva de un ganso huérfano.",
+    "description": "La aventura épica sigue el viaje de un robot - ROZZUM unidad 7134, “Roz” para abreviar...",
     "fecha": "Jueves 10 de Octubre de 2024",
-    "protagonistas": "Lupita Nyong’o, Pedro Pascal, Catherine O’Hara, Bill Nighy, Kit Connor, Stephanie Hsu, Mark Hamill, Matt Berry, Ving Rhames",
+    "protagonistas": "Lupita Nyong’o, Pedro Pascal, Catherine O’Hara...",
     "director": "Chris Sanders",
     "genero": "Familiar",
-    "calificacion": "Apta para todo publico",
+    "calificacion": "Apta para todo público",
     "duracion": "102 Minutos",
     "image": "/cartelera/RobotSalvaje.webp",
-    "link": "/Movie/4"
+    "link": "/Movie/4",
+    "horarios": [
+      {
+        "hora": "11:00",
+        "entradas_disponibles": 45
+      },
+      {
+        "hora": "15:00",
+        "entradas_disponibles": 35
+      },
+      {
+        "hora": "19:30",
+        "entradas_disponibles": 20
+      }
+    ]
   },
   {
     "id": 5,
     "title": "Joker 2",
-    "description": "En esta secuela, el infame Joker busca redención y enfrenta las consecuencias de sus acciones mientras trata de encontrar un nuevo camino en la vida. Su viaje lo lleva a confrontar viejos enemigos y forjar nuevas alianzas.",
+    "description": "En esta secuela, el infame Joker busca redención y enfrenta las consecuencias de sus acciones...",
     "fecha": "Viernes 8 de Diciembre de 2024",
     "protagonistas": "Joaquin Phoenix, Lady Gaga, Zazie Beetz",
     "director": "Todd Phillips",
@@ -62,12 +118,26 @@
     "calificacion": "Apta para mayores de 16 años",
     "duracion": "130 Minutos",
     "image": "/cartelera/Joker2.webp",
-    "link": "/Movie/5"
+    "link": "/Movie/5",
+    "horarios": [
+      {
+        "hora": "12:00",
+        "entradas_disponibles": 60
+      },
+      {
+        "hora": "16:30",
+        "entradas_disponibles": 40
+      },
+      {
+        "hora": "20:30",
+        "entradas_disponibles": 30
+      }
+    ]
   },
   {
     "id": 6,
     "title": "Beetlejuice Beetlejuice",
-    "description": "Después de ser invocado nuevamente, Beetlejuice se embarca en una serie de travesuras que desatan el caos en el mundo de los vivos y los muertos. Los protagonistas deben encontrar la manera de detenerlo antes de que sea demasiado tarde.",
+    "description": "Después de ser invocado nuevamente, Beetlejuice se embarca en una serie de travesuras...",
     "fecha": "Domingo 20 de Octubre de 2024",
     "protagonistas": "Michael Keaton, Winona Ryder, Catherine O'Hara",
     "director": "Tim Burton",
@@ -75,6 +145,20 @@
     "calificacion": "Apta para todos los públicos",
     "duracion": "90 Minutos",
     "image": "/cartelera/BeetlejuiceBeetlejuice.webp",
-    "link": "/Movie/6"
+    "link": "/Movie/6",
+    "horarios": [
+      {
+        "hora": "14:00",
+        "entradas_disponibles": 50
+      },
+      {
+        "hora": "18:00",
+        "entradas_disponibles": 35
+      },
+      {
+        "hora": "21:00",
+        "entradas_disponibles": 25
+      }
+    ]
   }
 ]
