@@ -25,7 +25,8 @@
         "entradas_disponibles": 25
       }
     ],
-    "trailer": "eKPrg7cEABo"
+    "trailer": "eKPrg7cEABo",
+    "estreno": true
   },
   {
     "id": 2,
@@ -53,12 +54,13 @@
         "entradas_disponibles": 10
       }
     ],
-    "trailer": "3iStEx0aUj8"
+    "trailer": "3iStEx0aUj8",
+    "estreno": true
   },
   {
     "id": 3,
     "title": "My Hero Academia: Ahora es tu turno",
-    "description": "Japón está devastado por la batalla total cuando un hombre misterioso aparece de repente. Se presenta como el que reemplazará a All Might, convirtiéndose en el nuevo Símbolo. Proclama '¡Ahora es mi turno!', ¡pero resulta ser Dark Might! A pesar de parecerse a All Might en apariencia, los ideales de Dark Might no podrían ser más diferentes. Desata su Don para sus propios deseos, creando una fortaleza masiva que comienza a absorber a la población una tras otra. Entre el grupo que acompaña a Dark Might se encuentra Anna, una joven con un Don desconocido que está siendo atacada por un individuo estoico con atuendo de mayordomo. Aunque esta persona, Giulio, la llama 'Señorita Anna', parece estar tras su vida. ¿Cuál podría ser su conexión con Dark Might?",
+    "description": "Japón está devastado por la batalla total cuando un hombre misterioso aparece de repente. Se presenta como el que reemplazará a All Might, convirtiéndose en el nuevo Símbolo. Proclama '¡Ahora es mi turno!', ¡pero resulta ser Dark Might! A pesar de parecerse a All Might en apariencia, los ideales de Dark Might no podrían ser más diferentes. Desata su Don para sus propios deseos, creando una fortaleza masiva que comienza a absorber a la población una tras otra.",
     "fecha": "Sábado 23 de Septiembre de 2024",
     "protagonistas": "Personajes Ficticios",
     "director": "Kenji Nagasaki",
@@ -81,12 +83,13 @@
         "entradas_disponibles": 40
       }
     ],
-    "trailer": "NPnImV1d7KE"
+    "trailer": "NPnImV1d7KE",
+    "estreno": false
   },
   {
     "id": 4,
     "title": "Robot Salvaje",
-    "description": "La aventura épica sigue el viaje de un robot - ROZZUM unidad 7134, “Roz” para abreviar - que naufraga en una isla deshabitada y debe aprender a adaptarse al duro entorno, estableciendo gradualmente relaciones con los animales de la isla y convirtiéndose en la madre adoptiva de un ganso huérfano",
+    "description": "La aventura épica sigue el viaje de un robot - ROZZUM unidad 7134, “Roz” para abreviar - que naufraga en una isla deshabitada y debe aprender a adaptarse al duro entorno, estableciendo gradualmente relaciones con los animales de la isla y convirtiéndose en la madre adoptiva de un ganso huérfano.",
     "fecha": "Jueves 10 de Octubre de 2024",
     "protagonistas": "Lupita Nyong’o, Pedro Pascal, Catherine O’Hara...",
     "director": "Chris Sanders",
@@ -109,12 +112,13 @@
         "entradas_disponibles": 20
       }
     ],
-    "trailer": "sEXyPinA4lE"
+    "trailer": "sEXyPinA4lE",
+    "estreno": false
   },
   {
     "id": 5,
     "title": "Joker 2",
-    "description": "Del aclamado escritor/director/productor Todd Phillips llega “Guasón 2: Folie À Deux,” la tan esperada continuación de “Guasón” de 2019, ganadora del Premio de la Academia, que recaudó más de $1 mil millones en la taquilla mundial y sigue siendo la película clasificada R más taquillera de todos los tiempos. La nueva película está protagonizada por Joaquin Phoenix una vez más en su papel dual ganador del Oscar como Arthur Fleck/Guasón, junto a la ganadora del Oscar Lady Gaga (“A Star Is Born”). “Guasón 2: Folie À Deux” encuentra a Arthur Fleck institucionalizado en Arkham esperando juicio por sus crímenes como Guasón. Mientras lucha con su doble identidad, Arthur no sólo tropieza con el verdadero amor, sino que también encuentra la música que siempre ha estado dentro de él.",
+    "description": "Del aclamado escritor/director/productor Todd Phillips llega “Guasón 2: Folie À Deux,” la tan esperada continuación de “Guasón” de 2019, ganadora del Premio de la Academia. La nueva película está protagonizada por Joaquin Phoenix una vez más en su papel dual ganador del Oscar como Arthur Fleck/Guasón, junto a la ganadora del Oscar Lady Gaga.",
     "fecha": "Viernes 8 de Diciembre de 2024",
     "protagonistas": "Joaquin Phoenix, Lady Gaga, Zazie Beetz",
     "director": "Todd Phillips",
@@ -137,12 +141,13 @@
         "entradas_disponibles": 30
       }
     ],
-    "trailer": "01UXuz00UkI"
+    "trailer": "01UXuz00UkI",
+    "estreno": false
   },
   {
     "id": 6,
     "title": "Beetlejuice Beetlejuice",
-    "description": "¡Beetlejuice ha vuelto! Después de una tragedia familiar inesperada, tres generaciones de la familia Deetz regresan a su hogar en Winter River. Aún atormentada por Beetlejuice, la vida de Lydia da un vuelco cuando su rebelde hija adolescente, Astrid, descubre el misterioso modelo de la ciudad en el ático y el portal al Más Allá se abre accidentalmente. Con problemas en ambos reinos, es solo cuestión de tiempo hasta que alguien diga el nombre de Beetlejuice tres veces y el travieso demonio regrese para desatar su propio tipo de caos.",
+    "description": "¡Beetlejuice ha vuelto! Después de una tragedia familiar inesperada, tres generaciones de la familia Deetz regresan a su hogar en Winter River. Aún atormentada por Beetlejuice, la vida de Lydia da un vuelco cuando su rebelde hija adolescente, Astrid, descubre el misterioso modelo de la ciudad en el ático y el portal al Más Allá se abre accidentalmente.",
     "fecha": "Domingo 20 de Octubre de 2024",
     "protagonistas": "Michael Keaton, Winona Ryder, Catherine O'Hara",
     "director": "Tim Burton",
@@ -165,6 +170,7 @@
         "entradas_disponibles": 25
       }
     ],
-    "trailer": "AhfGX6QBLjk"
+    "trailer": "AhfGX6QBLjk",
+    "estreno": false
   }
 ]

@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Cambia aquí la fuente */
-  background-color: #000000; /* Color de fondo oscuro */
-  color: #ffffff; /* Color del texto en blanco */
+  background-color: #d1c6c676; /* Color de fondo oscuro */
+  color: #000000; /* Color del texto en blanco */
 }
 
 @layer utilities {

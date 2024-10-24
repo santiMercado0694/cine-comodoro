@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-black-900 to-black-800 shadow-lg">
+    <nav className="bg-gradient-to-r bg-slate-900">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-white text-2xl font-bold " style={{ fontFamily: 'Roboto, sans-serif' }}>
           <Link href="/">Cine Comodoro</Link>

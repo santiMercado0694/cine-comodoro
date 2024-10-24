@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 import movies from "../../../context/movies.json";
 import MaxWidthWrapper from "@/components/layouts/MaxWidthWrapper";
+import * as React from "react";
+import Alert from "@mui/material/Alert";
 
 const Movie = ({ params }: { params: { MovieId: string } }) => {
   const movie = movies.find((m) => m.id === parseInt(params.MovieId));
@@ -62,7 +64,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
                   className={`cursor-pointer ${
                     selectedHorario === horario.hora
                       ? "text-blue-600 font-bold"
-                      : "text-gray-400 hover:text-blue-500"
+                      : "text-slate-500 hover:text-blue-500"
                   }`}
                   onClick={() => handleHorarioClick(horario.hora)}
                   style={{
@@ -93,9 +95,14 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
             Comprar
           </button>
           {!selectedHorario && (
-            <p className="text-red-500 mt-2">
-              Por favor, seleccione un horario para comprar tu entrada.
-            </p>
+            <div className="w-full space-y-2">
+              <Alert 
+                className="mt-5 bg-red-500 bg-opacity-15 text-black" 
+                severity="error"
+              >
+                Por favor, seleccione un horario para comprar tu entrada.
+              </Alert>
+            </div>
           )}
 
           {/* Sección del tráiler */}
