@@ -22,14 +22,14 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
 
   return (
     <MaxWidthWrapper>
-      <div className="flex flex-col md:flex-row p-6 mt-14">
+      <div className="flex flex-col md:flex-row p-6 mt-20 mb-6">
         <div className="md:w-1/2 mb-4 md:mb-0">
           <Image
             src={movie.image}
             alt={movie.title}
             width={400}
             height={600}
-            className="rounded-lg shadow-lg object-cover"
+            className="rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.9)] object-cover"
           />
         </div>
         <div className="md:w-1/2 md:pl-6">
@@ -96,8 +96,8 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
           </button>
           {!selectedHorario && (
             <div className="w-full space-y-2">
-              <Alert 
-                className="mt-5 bg-red-500 bg-opacity-15 text-black" 
+              <Alert
+                className="mt-5 bg-red-500 bg-opacity-15 text-black"
                 severity="error"
               >
                 Por favor, seleccione un horario para comprar tu entrada.
@@ -107,7 +107,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
 
           {/* Sección del tráiler */}
           {movie.trailer && (
-            <div className="mt-4">
+            <div className="mt-6">
               <h2 className="text-xl font-bold">Tráiler</h2>
               <iframe
                 width="100%"
@@ -116,6 +116,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
                 title={`Tráiler de ${movie.title}`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                className="rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.9)] mt-3 "
               ></iframe>
             </div>
           )}

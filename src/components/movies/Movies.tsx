@@ -24,7 +24,7 @@ const Movies = () => {
 
   return (
     <MaxWidthWrapper>
-      <div id="cartelera" className="p-8 mb-4">
+      <div id="cartelera" className="p-8 mb-6 mt-8">
         <h1 className="text-3xl font-bold mb-4 text-center">EN CARTELERA</h1>
         <div className="relative w-full overflow-hidden h-auto">
           <div

@@ -28,7 +28,7 @@ const Carousel = () => {
     setIndex(index === images.length - 1 ? 0 : index + 1);
   };
 
-  const handleDotClick = (idx: number) => {
+  const handleDotClick = (idx) => {
     setIndex(idx);
   };
 
@@ -38,7 +38,7 @@ const Carousel = () => {
   }, [index]);
 
   return (
-    <div className="relative w-full overflow-hidden h-auto">
+    <div className="relative w-full overflow-hidden h-auto bg-white shadow-[0_20px_40px_rgba(0,0,0,0.9)] rounded-lg">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}

@@ -48,7 +48,7 @@ const Navbar = () => {
             CARTELERA
           </a>
           <Link href="/Schedule" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
-            HORARIOS Y PRECIOS
+            PRECIOS Y HORARIOS
           </Link>
           <a href="#" onClick={scrollToProximos} className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
             PROXIMOS ESTRENOS
