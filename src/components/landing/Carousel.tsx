@@ -28,7 +28,7 @@ const Carousel = () => {
     setIndex(index === images.length - 1 ? 0 : index + 1);
   };
 
-  const handleDotClick = (idx) => {
+  const handleDotClick = (idx: number) => {
     setIndex(idx);
   };
 

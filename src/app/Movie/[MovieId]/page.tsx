@@ -33,7 +33,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
           />
         </div>
         <div className="md:w-1/2 md:pl-6">
-          <h1 className="text-3xl font-bold mb-2">{movie.title}</h1>
+          <h1 className="text-3xl font-bold mb-2 uppercase">{movie.title}</h1>
           <p className="text-lg mb-4">{movie.description}</p>
           <p className="text-md font-semibold">
             Fecha de estreno: <span className="font-normal">{movie.fecha}</span>
