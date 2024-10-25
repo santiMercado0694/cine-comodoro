@@ -8,15 +8,15 @@ import Link from "next/link";
 const Schedule = () => {
   return (
     <MaxWidthWrapper>
-      <div className="flex flex-col p-6">
+      <div className="flex flex-col p-10 mt-16 mb-2">
         <h1 className="text-3xl font-bold mb-4">Cartelera</h1>
         {movies.map((movie, index) => (
           <Link
             key={index}
             href={movie.link}
-            className="relative block overflow-hidden rounded-lg shadow-md transition-transform transform hover:scale-105"
+            className="relative block overflow-hidden rounded-lg shadow-md transition-transform transform hover:scale-105 mb-8" // Agregado mb-4
           >
-            <div key={movie.id} className="flex items-center mb-6">
+            <div key={movie.id} className="flex items-center">
               <Image
                 src={movie.image}
                 alt={movie.title}
@@ -24,7 +24,7 @@ const Schedule = () => {
                 height={300}
                 className="rounded-lg shadow-lg object-cover"
               />
-              <div className="ml-8 ">
+              <div className="ml-8">
                 <h2 className="text-xl font-semibold mb-2">{movie.title}</h2>
                 <p className="text-md font-semibold">Horarios:</p>
                 <p className="text-md">

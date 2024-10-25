@@ -22,7 +22,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
 
   return (
     <MaxWidthWrapper>
-      <div className="flex flex-col md:flex-row p-6">
+      <div className="flex flex-col md:flex-row p-6 mt-14">
         <div className="md:w-1/2 mb-4 md:mb-0">
           <Image
             src={movie.image}

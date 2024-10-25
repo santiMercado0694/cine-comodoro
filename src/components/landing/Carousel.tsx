@@ -28,15 +28,17 @@ const Carousel = () => {
     setIndex(index === images.length - 1 ? 0 : index + 1);
   };
 
-  // Efecto para cambiar automáticamente cada 5 segundos
+  const handleDotClick = (idx: number) => {
+    setIndex(idx);
+  };
+
   useEffect(() => {
-    const interval = setInterval(handleNext, 5000); // Cambia cada 5000 ms (5 segundos)
-    
-    return () => clearInterval(interval); // Limpieza del intervalo al desmontar el componente
-  }, [index]); // Se ejecuta el efecto cuando cambia el índice
+    const interval = setInterval(handleNext, 5000);
+    return () => clearInterval(interval);
+  }, [index]);
 
   return (
-    <div className="w-full overflow-hidden h-auto"> {/* Ajusta la altura aquí */}
+    <div className="relative w-full overflow-hidden h-auto">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
@@ -46,7 +48,7 @@ const Carousel = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover" // Cambia a h-full para que se ajuste al contenedor
+              className="w-full h-full object-cover"
             />
           </div>
         ))}
@@ -63,6 +65,15 @@ const Carousel = () => {
       >
         &#10095;
       </button>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => handleDotClick(idx)}
+            className={`w-5 h-5 rounded-full ${index === idx ? 'bg-white' : 'bg-gray-500'} transition-all duration-300`}
+          ></button>
+        ))}
+      </div>
     </div>
   );
 };
