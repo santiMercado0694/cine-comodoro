@@ -38,19 +38,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`bg-gradient-to-r bg-slate-900 opacity-80 fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="container mx-auto flex justify-between items-center p-4">
+    <nav className={`bg-gradient-to-r bg-slate-900 opacity-90 fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+      <div className="container mx-auto flex flex-wrap justify-between items-center p-4">
         <div className="text-white text-2xl font-bold" style={{ fontFamily: 'Roboto, sans-serif' }}>
           <Link href="/">CINE COMODORO</Link>
         </div>
-        <div className="flex-grow flex justify-center space-x-8">
-          <a href="#" onClick={scrollToCartelera} className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+        <div className="w-full md:w-auto flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mt-2 md:mt-0">
+          <a href="#" onClick={scrollToCartelera} className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>
             CARTELERA
           </a>
-          <Link href="/Schedule" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+          <Link href="/Schedule" className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>
             PRECIOS Y HORARIOS
           </Link>
-          <a href="#" onClick={scrollToProximos} className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif', transition: 'text-shadow 0.3s, transform 0.3s' }}>
+          <a href="#" onClick={scrollToProximos} className="text-white text-lg transition-transform transform hover:scale-105 hover:shadow-lg" style={{ fontFamily: 'Roboto, sans-serif' }}>
             PROXIMOS ESTRENOS
           </a>
         </div>
@@ -65,3 +65,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
