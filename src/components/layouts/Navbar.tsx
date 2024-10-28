@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'; // Importa usePathname
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const pathname = usePathname(); // Obtiene la ruta actual
 
   const handleScroll = () => {
     const element = document.getElementById('cartelera');
@@ -13,6 +15,11 @@ const Navbar = () => {
       setIsVisible(rect.top > 0);
     }
   };
+
+  // Efecto para detectar cambios en la ruta
+  useEffect(() => {
+    setIsVisible(true); // Restablece la visibilidad al navegar
+  }, [pathname]); // Ejecuta el efecto cada vez que pathname cambie
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -65,4 +72,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

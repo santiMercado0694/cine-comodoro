@@ -51,7 +51,7 @@ const Movies = () => {
                       <h3 className="text-white font-bold text-sm truncate w-full">ESTRENO</h3>
                     </div>
                   )}
-                  <div className="absolute bottom-0 left-50 w-full bg-gray-800 p-1 text-center">
+                  <div className="absolute bottom-0 left-50 w-full bg-gray-800 p-1 text-center opacity-80">
                     <h3 className="text-white font-bold text-sm truncate w-full">{movie.title}</h3>
                   </div>
                 </Link>

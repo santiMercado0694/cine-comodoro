@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link"; // Importa el componente Link
 import {
   Carousel,
   CarouselContent,
@@ -33,22 +34,32 @@ const UpcomingCarousel = () => {
                 key={index}
                 className="relative md:basis-1/2 lg:basis-1/6"
               >
-                <div className="p-1">
-                  <Card>
-                    <CardContent className="relative flex flex-col items-center justify-center p-1">
-                      <img
-                        src={movie.image}
-                        alt={movie.title}
-                        className="w-32 h-48 rounded-lg object-cover"
-                      />
-                      <div className="absolute bottom-0 w-full bg-blue-800 p-1 text-center">
-                        <h3 className="text-white font-bold text-sm truncate">
-                          {movie.title}
-                        </h3>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
+                <Link
+                  href={movie.link}
+                  className="relative block overflow-hidden rounded-lg shadow-md transition-transform transform hover:scale-105"
+                >
+                  <div className="p-4">
+                    <Card>
+                      <CardContent className="relative flex flex-col items-center justify-center p-1">
+                        <img
+                          src={movie.image}
+                          alt={movie.title}
+                          className="w-40 h-48 rounded-lg object-cover"
+                        />
+                        <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-full bg-red-800 p-1 text-center z-10">
+                          <h3 className="text-white font-bold text-sm truncate w-full">
+                            {movie.fecha}
+                          </h3>
+                        </div>
+                        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-11/12 bg-black bg-opacity-50 p-1 text-center rounded-md">
+                          <h3 className="text-white font-bold text-xs truncate">
+                            {movie.title}
+                          </h3>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>
