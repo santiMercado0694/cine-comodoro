@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image"; // Importa el componente Image
+import Image from "next/image";
+import promoImage from "../../../public/promos/promos.webp";
+import MaxWidthWrapper from "../layouts/MaxWidthWrapper";
 
 const promoImages = [
   {
@@ -47,51 +49,71 @@ const Promotions = () => {
   }, [index]);
 
   return (
-    <div className="w-2/3 mb-14 ml-5 mt-14 bg-gray-200">
-      <h1 className="text-4xl font-bold flex justify-center items-center mb-6 animate-pulse">
-        PROMOCIONES
-      </h1>
-      <div className="relative w-full overflow-hidden h-80 bg-white shadow-[0_20px_40px_rgba(0,0,0,0.9)] rounded-lg">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${index * 100}%)` }}
-        >
-          {promoImages.map((image, idx) => (
-            <div className="flex-shrink-0 w-full" key={idx}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                layout="responsive" // Opción de diseño
-                width={800} // Ajusta el ancho deseado
-                height={600} // Ajusta la altura deseada
-                className="object-cover"
-              />
+    <MaxWidthWrapper>
+      <div className="mb-14 mt-14">
+        <h1 className="text-4xl font-bold flex justify-center items-center mb-6 animate-pulse">
+          PROMOCIONES
+        </h1>
+        <div className="flex items-center">
+          {/* Imagen de promociones a la izquierda */}
+          <div className="flex-shrink-0 mr-8">
+            <Image
+              src={promoImage}
+              alt="Imagen de promociones"
+              width={355} // Ajusta el ancho según lo que necesites
+              height={600} // Ajusta la altura según lo que necesites
+              className="object-cover"
+            />
+          </div>
+
+          {/* Carrusel con ancho fijo */}
+          <div className="relative w-[800px] h-80 overflow-hidden bg-white shadow-md">
+            {" "}
+            {/* Cambia w-[800px] al tamaño deseado */}
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${index * 100}%)` }}
+            >
+              {promoImages.map((image, idx) => (
+                <div className="flex-shrink-0 w-full" key={idx}>
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    className="object-cover"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <button
-          onClick={handlePrev}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-600"
-        >
-          &#10094;
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-600"
-        >
-          &#10095;
-        </button>
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {promoImages.map((_, idx) => (
             <button
-              key={idx}
-              onClick={() => handleDotClick(idx)}
-              className={`w-4 h-4 ${index === idx ? 'bg-white' : 'bg-gray-500'} rounded transition-all duration-300`}
-            ></button>
-          ))}
+              onClick={handlePrev}
+              className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-600"
+            >
+              &#10094;
+            </button>
+            <button
+              onClick={handleNext}
+              className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-600"
+            >
+              &#10095;
+            </button>
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {promoImages.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleDotClick(idx)}
+                  className={`w-4 h-4 ${
+                    index === idx ? "bg-white" : "bg-gray-500"
+                  } rounded transition-all duration-300`}
+                ></button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 };
 
