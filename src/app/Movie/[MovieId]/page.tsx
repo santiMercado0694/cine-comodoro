@@ -26,7 +26,7 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
   return (
     <MaxWidthWrapper>
       <div className="flex flex-col md:flex-row p-6 mt-20 mb-40">
-        <div className="md:w-1/2 mb-4 md:mb-0">
+        <div className="md:w-1/2 mb-4 md:mb-0 relative">
           <Image
             src={movie.image}
             alt={movie.title}
@@ -34,6 +34,16 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
             height={600}
             className="rounded-lg shadow-[0_10px_30px_rgba(0,0,0,0.9)] object-cover"
           />
+          {/* Etiqueta de Cine Coliseo o Teatro Español */}
+          {(movie.coliseo || movie.teatro) && (
+            <div
+              className={`absolute top-0 left-0 px-3 py-1 rounded-lg text-white font-bold text-sm  ${
+                movie.coliseo ? "bg-blue-600" : "bg-red-600"
+              }`}
+            >
+              {movie.coliseo ? "Cine Coliseo" : "Teatro Español"}
+            </div>
+          )}
         </div>
         <div className="md:w-1/2 md:pl-6">
           <h1 className="text-3xl font-bold mb-2 uppercase">{movie.title}</h1>
@@ -59,7 +69,6 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
             Duración: <span className="font-normal">{movie.duracion}</span>
           </p>
 
-          {/* Renderizar solo si hay horarios */}
           {movie.horarios.length > 0 && (
             <>
               <p className="text-md font-semibold">
@@ -114,7 +123,6 @@ const Movie = ({ params }: { params: { MovieId: string } }) => {
             </>
           )}
 
-          {/* Sección del tráiler */}
           {movie.trailer && (
             <div className="mt-6">
               <h2 className="text-xl font-bold">Tráiler</h2>
